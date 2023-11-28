@@ -1,7 +1,7 @@
 # função é tudo que retorna valor.
 # Metodo é tudo que n retorna valor, em python isso é chamado de definição e inicializado por 'def'.
 
-class calculadora: #a palavra 'class' inicializa uma classe.
+class Calculadora: #a palavra 'class' inicializa uma classe.
     def __init__(self, n1, n2): #O metodo '__init__(self) inicializa uma class.
         self.a = n1 #o Metodo 'self' é utilizado para se referir a propria variavel, permitindo que a mesma receba parametros diversos de forma definida.
         self.b = n2
@@ -16,14 +16,15 @@ class calculadora: #a palavra 'class' inicializa uma classe.
     def resto (self):
         return self.a % self.b
 
-calculadora = calculadora(10,3) #instanciando a class.
-print(' O valor instanciado em A é: \n{}'.format(calculadora.a))
-print(' O valor instanciado em B é: \n{}'.format(calculadora.b))
-print(' O valor da Soma de A + B é: \n{}'.format(calculadora.soma()))
-print(' O valor da Subtração de A - B é: \n{}'.format(calculadora.sub()))
-print(' O valor da Divisão de A / B é: \n{}'.format(calculadora.div()))
-print(' O valor da Multiplicação de A * B é: \n{}'.format(calculadora.mult()))
-print(' O valor do Resto de A % B é: \n{}'.format(calculadora.resto()))
+if __name__ == '__main__':
+    calculadora = calculadora(10,3) #instanciando a class.
+    print(' O valor instanciado em A é: \n{}'.format(calculadora.a))
+    print(' O valor instanciado em B é: \n{}'.format(calculadora.b))
+    print(' O valor da Soma de A + B é: \n{}'.format(calculadora.soma()))
+    print(' O valor da Subtração de A - B é: \n{}'.format(calculadora.sub()))
+    print(' O valor da Divisão de A / B é: \n{}'.format(calculadora.div()))
+    print(' O valor da Multiplicação de A * B é: \n{}'.format(calculadora.mult()))
+    print(' O valor do Resto de A % B é: \n{}'.format(calculadora.resto()))
 # def soma(a,b):
 #     return a + b
 #
